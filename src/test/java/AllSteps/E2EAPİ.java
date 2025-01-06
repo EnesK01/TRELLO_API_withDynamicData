@@ -23,22 +23,22 @@ public class E2EAPİ {
     public void alltest() throws InterruptedException {
          String boardid=tr_postBoard_test.PostRequest();
          tr_getBoard_test.GetRequest(boardid);
-         Thread.sleep(10000);
+         Thread.sleep(5000);
          String listid=tr_creatEaListOnAboard_apiTest.createAlist(boardid);
-         Thread.sleep(10000);
+         Thread.sleep(5000);
         String[] cardIds=tr_postCard_test.makeCard(listid);
         String firstCardid=cardIds[0];
         String secondCardid=cardIds[1];
-         Thread.sleep(10000);
+         Thread.sleep(5000);
          Random random = new Random();
          int randomIndex = random.nextInt(cardIds.length);
          String randomCard = cardIds[randomIndex];
          tr_putCard_test.UpdateCardName(randomCard);
-         Thread.sleep(10000);
+         Thread.sleep(5000);
          tr_removeCard_test.RemoveCards(cardIds);
-         Thread.sleep(10000);
+         Thread.sleep(5000);
          tr_deleteBoard_test.DeleteRequest(boardid);
-         Thread.sleep(10000);
+         Thread.sleep(5000);
 
 
 

@@ -7,6 +7,7 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="Trello_ApicardV2" />
+        <module name="TRELLO_API_withDynamicData" />
       </profile>
     </annotationProcessing>
   </component>
